@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pain 2 Profit - Streetwear</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        @keyframes swing {
+            0% { transform: rotateY(-20deg); }
+            50% { transform: rotateY(20deg); }
+            100% { transform: rotateY(-20deg); }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            display: inline-block;
+            animation: swing 3s ease-in-out infinite;
+            transform-origin: center;
+            will-change: transform;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+        .btn {
+            background: #ff4500;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff2200;
+        }
+        .shop {
+            padding: 50px;
+            background: #111;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            background: #000;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">P2P</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Pain 2 Profit</h1>
+        <p>From the struggle to the hustle. Wear the story.</p>
+        <a href="#shop" class="btn">Shop Now</a>
+    </section>
+    
+    <section id="shop" class="shop">
+        <h2>Featured Drops</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="hoodie1.jpg" alt="Hoodie 1" width="200">
+                <h3>P2P Hoodie</h3>
+                <p>$59.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="tshirt1.jpg" alt="T-Shirt 1" width="200">
+                <h3>P2P Tee</h3>
+                <p>$34.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>Our Story</h2>
+        <p>Pain 2 Profit is more than a brand. It's a movement. Inspired by real struggle, turned into success.</p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Follow us on social media or drop us a message.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Pain 2 Profit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
